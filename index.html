@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|=swap" rel="stylesheet">
+    <title>Simulador de prestamo</title>
+</head>
+<body>
+    <header>
+        <h1>Simulador de prestamo</h1>
+        <p>En este espacio podrás simular prstamos de la manera que más se te adecue.</p>
+    </header>
+    <div class="entrada">
+
+        <form id="datos">
+            <label for="">Ingresa tus datos</label>
+            <input type="text" placeholder="nombre" name="nombre" id="nombre">
+            <input type="text" placeholder="apellido" name="apellido" id="apellido">
+            <input type="email" placeholder="correo@correo.com" name="correo" id="correo">
+            <input type="text" placeholder="monto" name="monto" id="monto">
+            <input type="text" placeholder="Plazo en meses para pagar" name="tiempo" id="tiempo">
+            <input type="text" placeholder="Interés mensual" name="interes" id="interes">
+            <button id="botom">Vamos!</button>
+        </form>
+        <button onclick="genTable();">Boton de prueba que no deberia ir</button>  <!-- Sé que no es lo correcto pero funciona  -->
+    </div>
+    <div class="tab">
+        </fieldset>
+        <hr>
+        <table class="tab">
+            <thead>
+                <tr>
+                    <td>CUOTA</td>
+                    <td>CAPITAL</td>
+                    <td>INTERES</td>
+                    <td>IMPORTE A PAGAR</td>
+                </tr>
+            </thead>
+            <tbody id="tab">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <footer>
+    </footer>
+    <script type="text/javascript" src="js/simulador.js"></script>
+</body>
+</html>
